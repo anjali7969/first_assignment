@@ -5,6 +5,7 @@ class AreaOfCircleView extends StatefulWidget {
   const AreaOfCircleView({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _AreaOfCircleViewState createState() => _AreaOfCircleViewState();
 }
 
