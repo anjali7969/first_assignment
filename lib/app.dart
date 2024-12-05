@@ -1,12 +1,5 @@
-import 'package:first_assignment/common/mysnackbar.dart';
-import 'package:first_assignment/view/Flexible_expanded_view.dart';
-import 'package:first_assignment/view/classwork_view.dart';
-import 'package:first_assignment/view/column_row.dart';
-import 'package:first_assignment/view/column_view.dart';
-import 'package:first_assignment/view/container_view.dart';
-import 'package:first_assignment/view/dashboard.dart';
-import 'package:first_assignment/view/load_image_view.dart';
-import 'package:first_assignment/view/snack_bar_view.dart';
+import 'package:first_assignment/view/student_details_view.dart';
+import 'package:first_assignment/view/student_output_view.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -14,9 +7,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ClassworkView(),
+      // Set the initial route
+      initialRoute: '/',
+      // Define the route mapping
+      routes: {
+        '/': (context) => const StudentDetailsView(), // Default route
+        '/output': (context) => const StudentOutputView(),
+      },
     );
   }
 }
