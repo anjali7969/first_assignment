@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-showMySnackBar(
-  BuildContext context,
-  String message, {
-  Color? color,
-}) {
+showMySnackBar(BuildContext context, String message, {Color? color}) {
   ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(
       content: Text(message),
@@ -15,8 +11,8 @@ showMySnackBar(
   );
 }
 
-class Mysnackbar extends StatelessWidget {
-  const Mysnackbar({super.key});
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
