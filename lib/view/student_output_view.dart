@@ -1,4 +1,4 @@
-import 'package:first_assignment/common/student_list_view.dart';
+import 'package:first_assignment/core/common/student_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:first_assignment/model/student.dart';
 

@@ -1,11 +1,5 @@
-import 'package:first_assignment/view/bottom_navigation_view.dart';
-import 'package:first_assignment/view/card_view.dart';
-import 'package:first_assignment/view/datatable_view.dart';
-import 'package:first_assignment/view/dynamic_card_view.dart';
-import 'package:first_assignment/view/number_grid_view.dart';
-import 'package:first_assignment/view/stack_view.dart';
-import 'package:first_assignment/view/student_details_view.dart';
-import 'package:first_assignment/view/student_output_view.dart';
+import 'package:first_assignment/core/app_theme.dart';
+import 'package:first_assignment/view/time_date_view.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -13,10 +7,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'Font and Theme',
+      initialRoute: '/',
+      theme: getApplicationTheme(),
       debugShowCheckedModeBanner: false,
 
-      home: BottomNavigationView(),
+      home: const TimeDateView(),
       // Set the initial route
       // initialRoute: '/',
       // // Define the route mapping

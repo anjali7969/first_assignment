@@ -1,5 +1,5 @@
-import 'package:first_assignment/common/my_card.dart';
-import 'package:first_assignment/common/mysnackbar.dart';
+import 'package:first_assignment/core/common/my_card.dart';
+import 'package:first_assignment/core/common/mysnackbar.dart';
 import 'package:flutter/material.dart';
 
 class DynamicCardView extends StatelessWidget {

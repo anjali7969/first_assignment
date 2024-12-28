@@ -1,4 +1,4 @@
-import 'package:first_assignment/common/student_list_view.dart' as common;
+import 'package:first_assignment/core/common/student_list_view.dart' as common;
 import 'package:first_assignment/model/student.dart' as model;
 import 'package:flutter/material.dart';
 
